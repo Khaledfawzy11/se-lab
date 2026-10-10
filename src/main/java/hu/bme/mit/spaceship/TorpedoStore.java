@@ -9,6 +9,7 @@ import java.util.Random;
 */
 public class TorpedoStore {
 
+// Reuse one Random instance instead of creating a new one for every shot.
   private final Random generator = new Random();
 
   // rate of failing to fire torpedos [0.0, 1.0]
@@ -33,7 +34,7 @@ public class TorpedoStore {
   
 public boolean fire(int numberOfTorpedos) {
     if (numberOfTorpedos < 1 || numberOfTorpedos > this.torpedoCount) {
-        throw new IllegalArgumentException("numberOfTorpedos");
+       throw new IllegalArgumentException("Invalid number of torpedoes.");
     }
 
     boolean success = false;
