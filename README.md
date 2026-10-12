@@ -1,5 +1,8 @@
 # SE Spaceship
 
+[![Maven CI](https://github.com/Khaledfawzy11/se-lab/actions/workflows/maven.yml/badge.svg)](https://github.com/Khaledfawzy11/se-lab/actions/workflows/maven.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 This is a sample application for the [Software Engineering](http://www.mit.bme.hu/oktatas/targyak/vimiab04) course at BME MIT.
 
 The application is simplified and deliberately contains bugs.
@@ -12,13 +15,13 @@ The application is simplified and deliberately contains bugs.
 
 Clone the repository and execute Maven to build the application:
 
-```
+```bash
 mvn compile
 ```
 
 To compile and run tests also execute:
 
-```
+```bash
 mvn test
 ```
 
@@ -38,4 +41,3 @@ The project represents an alpha version of a spaceship.
 - There are currently two tests (`GT4500Test`), but be aware that they are not proper unit tests, as they do not isolate the dependencies of the tested class.
 
 The code can be built, but due to missing features one of the tests fails. The first exercise will be to fix this.
-
